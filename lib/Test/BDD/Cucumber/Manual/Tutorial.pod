@@ -63,7 +63,7 @@ C<features/step_definitions/basic_steps.pl> file in it:
 
  use Test::More;
  use Test::BDD::Cucumber::StepFile;
- use Method::Signatures;
+ use Method::Signatures::Simple;
 
  Given qr/a usable (\S+) class/, func ($c) { use_ok( $1 ); };
  Given qr/a Digest (\S+) object/, func ($c) {
@@ -128,7 +128,7 @@ This is matched by:
 
 C<Given()> is a function exported by L<Test::BDD::Cucumber::StepFile> that
 accepts two arguments: a regular expression (or a string when you don't need
-to do any smart matching) and a coderef. We use L<Method::Signatures> to save
+to do any smart matching) and a coderef. We use L<Method::Signatures::Simple> to save
 some typing here, so note that written longer hand, the above might be written:
 
  Given(

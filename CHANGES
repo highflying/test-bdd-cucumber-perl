@@ -1,4 +1,7 @@
 -----
+0.18: 27 Feb 2014
+    - Removed dependency on Methods::Signature and replaced it with
+      Method::Signatures::Simple
 0.17: 01 Dec 2013
     - the Calculator module should now be hidden from the PAUSE indexer
     - The scenario stash wasn't being reset between each Outline Scenario

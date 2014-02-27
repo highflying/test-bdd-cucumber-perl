@@ -5,7 +5,7 @@ use warnings;
 use Test::More;
 use Test::BDD::Cucumber::StepFile;
 use Digest::MD5;
-use Method::Signatures;
+use Method::Signatures::Simple;
 
 Given qr/a Digest MD5 object/, func($c) {
     $c->stash->{scenario}{digest} = Digest::MD5->new;

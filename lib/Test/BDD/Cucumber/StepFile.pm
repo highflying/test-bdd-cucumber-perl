@@ -30,7 +30,7 @@ Defining steps:
  use strict; use warnings; use Test::More;
 
  use Test::BDD::Cucumber::StepFile;
- use Method::Signatures; # Allows short-hand func method
+ use Method::Signatures::Simple; # Allows short-hand func method
 
  Given     'something',          func ($c) { print "YEAH!" }
  When      qr/smooooth (\d+)/,   func ($c) { print "YEEEHAH $1" }

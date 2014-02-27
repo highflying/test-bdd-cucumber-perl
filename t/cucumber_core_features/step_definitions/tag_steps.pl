@@ -8,7 +8,7 @@ use Test::BDD::Cucumber::StepFile;
 use Test::BDD::Cucumber::Parser;
 use Test::BDD::Cucumber::Model::Scenario;
 use Test::BDD::Cucumber::Model::TagSpec;
-use Method::Signatures;
+use Method::Signatures::Simple;
 
 my %ordinals = qw/0 first 1 second 2 third 3 fourth 4 fifth/;
 

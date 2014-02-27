@@ -8,7 +8,7 @@ use Test::BDD::Cucumber::Harness::Data;
 use Test::BDD::Cucumber::Executor;
 use Test::BDD::Cucumber::Parser;
 use Test::BDD::Cucumber::StepFile;
-use Method::Signatures;
+use Method::Signatures::Simple;
 use List::Util qw/sum/;
 
 my $template = join '', (<DATA>);
